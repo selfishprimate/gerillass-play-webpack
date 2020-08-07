@@ -66,16 +66,13 @@ table {
   border-spacing: 0;
 }
 
-html, body {
+html {
   position: relative;
-  font-size: 100%;
+  font-family: "Roboto", sans-serif;
+  font-size: 110%;
+  color: #2f3937;
   line-height: 1.4;
-}
-
-body {
-  background-color: #bdbdbb;
-  font-family: sans-serif;
-  font-size: 16px;
+  background-color: #888d80;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -85,7 +82,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .main-container {
   padding: 2rem;
-  background-color: white;
+  background-color: #fafaf8;
   margin: 0 auto;
 }
 
@@ -110,6 +107,13 @@ h1, h2, h3, h4, h5, h6 {
 @media (min-width: 1200px) {
   .main-container {
     max-width: calc(1200px - (2rem * 2));
+  }
+}
+
+@media (min-width: 576px) {
+  .main-container {
+    margin-top: 2rem;
+    border-radius: 1rem;
   }
 }
 
