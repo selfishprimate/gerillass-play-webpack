@@ -1,0 +1,30 @@
+{
+  "name": "gerillass_play",
+  "version": "0.0.1",
+  "description": "The easiest way to play with Gerillass.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/babilkuyusu/gulpazan.git"
+  },
+  "author": "Halil İbrahim Çakıroğlu",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "del": "^5.1.0",
+    "gerillass": "^1.0.1",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-cache": "^1.0.2",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4"
+  },
+  "dependencies": {
+    "browserslist": "^4.8.2",
+    "caniuse-lite": "^1.0.30001017"
+  }
+}
