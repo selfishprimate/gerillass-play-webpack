@@ -10,7 +10,7 @@ const autoprefixer = require("gulp-autoprefixer");
 function sassify(done) {
   return (
     src("assets/scss/**/*.scss")
-      .pipe(sourcemaps.init())
+      // .pipe(sourcemaps.init())
       .pipe(
         sass({
           outputStyle: "expanded",
