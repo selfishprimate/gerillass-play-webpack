@@ -9,7 +9,7 @@ const autoprefixer = require("gulp-autoprefixer");
 // Sass compiler
 function sassify(done) {
   return (
-    src("assets/scss/**/*.scss")
+    src("src/assets/scss/**/*.scss")
       // .pipe(sourcemaps.init())
       .pipe(
         sass({
@@ -22,7 +22,7 @@ function sassify(done) {
       })
       .pipe(autoprefixer({ cascade: true }))
       .pipe(sourcemaps.write())
-      .pipe(dest("assets/css"))
+      .pipe(dest("src/assets/css"))
       .pipe(browserSync.stream())
   );
   done();
@@ -31,31 +31,31 @@ function sassify(done) {
 function browser_sync(done) {
   browserSync.init({
     watch: true,
-    server: { baseDir: "." },
+    server: { baseDir: "src" },
     port: 5000,
   });
   done();
 }
 
 function html() {
-  return src("*.html").pipe(dest("dist"));
+  return src("src/*.html").pipe(dest("dist"));
 }
 
 function images() {
-  return src("assets/images/**/*.+(png|jpg|gif|svg)").pipe(
+  return src("src/assets/images/**/*.+(png|jpg|gif|svg)").pipe(
     dest("dist/assets/images")
   );
 }
 
 function css() {
-  return src("assets/css/**/*.css").pipe(dest("dist/assets/css/"));
+  return src("src/assets/css/**/*.css").pipe(dest("dist/assets/css/"));
 }
 
 function js() {
   // The ordering is very important here!
   // First it moves all the js files
   // Second it overwrites the "scripts.js" file with the transpiled one
-  return src("assets/js/**/*.js").pipe(dest("dist/assets/js/"));
+  return src("src/assets/js/**/*.js").pipe(dest("dist/assets/js/"));
 }
 
 // Deletes the dist folder
@@ -69,8 +69,8 @@ function clear_cache(done) {
 }
 
 function watch_files(done) {
-  watch("**/*.scss", sassify);
-  watch("**/*.html", browserSync.reload);
+  watch("src/**/*.scss", sassify);
+  watch("src/**/*.html", browserSync.reload);
   done();
 }
 
