@@ -68,11 +68,14 @@ table {
 
 html {
   position: relative;
-  font-family: "Roboto", sans-serif;
   font-size: 110%;
+  background-color: #fafaf8;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
   color: #2f3937;
-  line-height: 1.4;
-  background-color: #888d80;
+  line-height: 1.6;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -86,6 +89,20 @@ h1 {
 
 h2 {
   font-size: 1.8rem;
+}
+
+strong {
+  font-weight: bold;
+}
+
+code {
+  padding: 2px 5px;
+  background-color: rgba(47, 57, 55, 0.1);
+  border-radius: 3px;
+}
+
+p {
+  margin-bottom: 1rem;
 }
 
 .main-container {
@@ -125,4 +142,4 @@ h2 {
   }
 }
 
-/* Write your Sass code here! */
+/* Write your styles  here! */
