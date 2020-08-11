@@ -14,6 +14,9 @@ body {
   font-family: "Roboto", sans-serif;
   color: #2f3937;
   line-height: 1.6;
+  padding: 2rem;
+  background-color: #fafaf8;
+  @include adaptive(2rem);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -40,16 +43,6 @@ code {
 
 p {
   margin-bottom: 1rem;
-}
-
-.main-container {
-  padding: 2rem;
-  background-color: #fafaf8;
-  @include adaptive(2rem);
-  @include breakpoint(min, small) {
-    margin-top: 2rem;
-    @include border-radius(1rem);
-  }
 }
 
 /* Write your styles  here! */

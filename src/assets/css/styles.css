@@ -76,6 +76,33 @@ body {
   font-family: "Roboto", sans-serif;
   color: #2f3937;
   line-height: 1.6;
+  padding: 2rem;
+  background-color: #fafaf8;
+  margin: 0 auto;
+}
+
+@media (min-width: 576px) {
+  body {
+    max-width: calc(576px - (2rem * 2));
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    max-width: calc(768px - (2rem * 2));
+  }
+}
+
+@media (min-width: 992px) {
+  body {
+    max-width: calc(992px - (2rem * 2));
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    max-width: calc(1200px - (2rem * 2));
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -103,43 +130,6 @@ code {
 
 p {
   margin-bottom: 1rem;
-}
-
-.main-container {
-  padding: 2rem;
-  background-color: #fafaf8;
-  margin: 0 auto;
-}
-
-@media (min-width: 576px) {
-  .main-container {
-    max-width: calc(576px - (2rem * 2));
-  }
-}
-
-@media (min-width: 768px) {
-  .main-container {
-    max-width: calc(768px - (2rem * 2));
-  }
-}
-
-@media (min-width: 992px) {
-  .main-container {
-    max-width: calc(992px - (2rem * 2));
-  }
-}
-
-@media (min-width: 1200px) {
-  .main-container {
-    max-width: calc(1200px - (2rem * 2));
-  }
-}
-
-@media (min-width: 576px) {
-  .main-container {
-    margin-top: 2rem;
-    border-radius: 1rem;
-  }
 }
 
 /* Write your styles  here! */
