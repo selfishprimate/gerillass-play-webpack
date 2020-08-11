@@ -7,7 +7,7 @@
 html {
   position :relative;
   font-size: 110%;
-  background-color: #fafaf8;
+  background-color: #fff;
 }
 
 body {
@@ -15,7 +15,6 @@ body {
   color: #2f3937;
   line-height: 1.6;
   padding: 2rem;
-  background-color: #fafaf8;
   @include adaptive(2rem);
 }
 
