@@ -1,4 +1,5 @@
-@import "gerillass";
+@import "../gerillass/gerillass/scss/gerillass";
+// @import "gerillass";
 
 @include border-box;
 @include antialias;
@@ -14,8 +15,6 @@ body {
   font-family: "Roboto", sans-serif;
   color: #2f3937;
   line-height: 1.6;
-  padding: 2rem;
-  @include adaptive(2rem);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -46,3 +45,18 @@ p {
 
 /* Write your styles  here! */
 
+.main-container {
+  @include adaptive();
+  padding: 2rem;
+}
+.card-list {
+  @include columnizer(4, 20px, true);
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(245,245,245);
+    border-radius: 4px;
+    @include ratio-box(16/6);
+  }
+}

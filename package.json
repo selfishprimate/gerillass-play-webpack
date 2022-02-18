@@ -1,11 +1,14 @@
 {
   "name": "gerillass-play",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "The easiest way to play with Gerillass.",
   "main": "index.js",
   "scripts": {
     "start": "node index",
-    "dev": "nodemon index"
+    "build": "webpack",
+    "build:watch": "webpack --watch",
+    "dev": "webpack serve",
+    "gerillass": "webpack serve"
   },
   "repository": {
     "type": "git",
@@ -14,17 +17,21 @@
   "author": "Halil İbrahim Çakıroğlu",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.23.6",
-    "del": "^5.1.0",
-    "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^7.0.1",
-    "gulp-cache": "^1.0.2",
-    "gulp-sass": "^4.0.1",
-    "gulp-sourcemaps": "^2.6.4"
+    "css-loader": "^6.6.0",
+    "html-loader": "^3.1.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.5.3",
+    "postcss": "^8.4.6",
+    "postcss-loader": "^6.2.1",
+    "postcss-preset-env": "^7.4.1",
+    "sass": "^1.49.8",
+    "sass-loader": "^12.6.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.69.1",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4"
   },
   "dependencies": {
-    "browserslist": "^4.8.2",
-    "caniuse-lite": "^1.0.30001017",
-    "gerillass": "^1.1.0"
+    "gerillass": "^1.2.7"
   }
 }
