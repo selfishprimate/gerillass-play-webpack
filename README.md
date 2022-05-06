@@ -10,9 +10,9 @@
 
 Cloning the repository: 
   
-    git clone https://github.com/selfishprimate/gerillass-play
+    git clone https://github.com/selfishprimate/gerillass-play-webpack
 
-Go into the project folder and run `npm install` command to install all the dependencies that the project needs.
+Go into the project folder and run `yarn install` command to install all the dependencies that the project needs.
 
 After the installation, run the `npm run gerillass` command to power up the project.
 
